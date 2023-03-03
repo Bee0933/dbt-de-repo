@@ -26,4 +26,4 @@ select
     cast(payment_type as integer) as payment_type,
     cast(congestion_surcharge as numeric) as congestion_surcharge
 from {{ source("staging", "dbt_transform") }}
-limit (100)
+limit 100

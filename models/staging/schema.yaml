@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+    - name: staging
+      database: dev
+      schema: public
+
+      tables:
+        - name: dbt_transform
+        #  freshness:
+        #    error_after: {count: 6, period: hour}
+
